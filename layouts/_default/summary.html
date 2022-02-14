@@ -1,6 +1,6 @@
 <a href="{{ .Permalink }}" class="catalogue-item">
     <div>
-        <time datetime="{{ .PublishDate }}" class="catalogue-time">{{ i18n "publishdate" . }}</time>
+        <time datetime="{{ dateFormat "2006-01-02" .PublishDate }}" class="catalogue-time">{{ dateFormat "2006-01-02" .PublishDate }}</time>
         <h2 class="catalogue-title">{{ .Title }}</h2>
         <div class="catalogue-line"></div>
 
